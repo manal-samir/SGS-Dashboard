@@ -1,0 +1,475 @@
+:root {
+    --onecolor: #5E6EED;
+    --twocolor: #FFFFFF;
+    --threecolor: #030303;
+    --fourcolor: #00D284;
+    --fivecolor: #FF5730;
+    --sixcolor: #f8b42b;
+    --sevencolor: #FF0D59;
+    --eigthcolor: #00cbef;
+    --ninecolor: #F2F2F2;
+    --tencolor: #AEAEAE;
+    --elevencolor: #F5F5F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--elevencolor);
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+/* -----------------------------------Navbar--------------------------------- */
+.admin-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px var(--onecolor) solid;
+}
+
+.icons {
+    color: var(--onecolor);
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-item .nav-links {
+    color: var(--onecolor);
+    font: size 18px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-links:hover {
+    color: rgba(94, 110, 237, 0.8);
+    font: size 18px;
+    font-weight: 500;
+}
+
+
+/* -----------------------------------Table content--------------------------------- */
+#searchInput::placeholder,
+.search-nav-input::placeholder {
+    font-size: 15px;
+    color: var(--tencolor);
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+.user-list-heading {
+    color: var(--onecolor);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.table-heading th {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--twocolor)
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px var(--fourcolor) solid;
+}
+
+.table-heading {
+    background-color: var(--onecolor);
+}
+
+.user-table-row {
+    border-bottom: 2px var(--elevencolor) solid;
+
+}
+
+.users-table {
+    background-color: var(--twocolor);
+}
+
+.users-table {
+    border-radius: 15px;
+}
+
+.user-status {
+    color: var(--fourcolor);
+}
+
+
+.btnDelete,
+.btnUpdate {
+    cursor: pointer;
+}
+
+.delete-icon {
+    color: rgb(217, 0, 0);
+    font-size: 18px;
+}
+
+.update-icon {
+    color: var(--sixcolor);
+    font-size: 18px;
+}
+
+
+/* -----------------------------------Sidebar--------------------------------- */
+.sidemenu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--onecolor);
+
+}
+
+.sidemenu-icon i {
+    color: var(--twocolor);
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--twocolor);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color:var(--onecolor);
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+   color:rgba(94, 110, 237,0.8);
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.breadcrum-link{
+    color:var(--onecolor);
+}
+
+.breadcrum-link:hover{
+    color:rgba(94, 110, 237,0.8);
+}
+
+
+#main {
+    /* background-color: var(--onecolor); */
+
+    transition: margin-left .5s;
+
+}
+
+.sidebar-icon {
+    font-size: 18px;
+}
+
+.sidebar-icon:hover{
+    color:rgba(255, 255, 255,0.8);
+}
+
+
+/* -----------------------------------Footer-------------------------------- */
+.footer-caption {
+    font-size:16px;
+    color:var(--onecolor);
+
+}
+
+/* -----------------------------------my workspace page--------------------------------- */
+
+.welcome-card-title{
+    color:var(--fivecolor);
+    font-size:18px;
+    font-weight: 600;
+}
+
+.welcome-card-caption{
+    color:var(--twocolor);
+    font-size:16px;
+    font-weight: 100;
+}
+
+.weather-title{
+    color:var(--eigthcolor);
+    font-weight: 600;
+    font-size:16px;
+}
+
+.weather-today{
+    color:var(--fourcolor);
+    font-size:16px;
+}
+
+.today-degree{
+    color:var(--twocolor);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.welcome-card-container{
+    background-color:var(--threecolor);
+    border-radius: 15px;
+
+}
+
+.recent-leads-container{
+    background-color: var(--eigthcolor);
+    border-radius: 15px;
+}
+
+
+
+.leads-icon{
+    color:var(--eigthcolor);
+    font-size: 16px;
+    background-color: var(--twocolor);
+    border-radius: 50%;
+}
+
+.card-heading{
+    font-size:18px;
+    color:var(--twocolor);
+    font-weight: 600;
+}
+
+.card-caption .card-details-container .card-details{
+    color:var(--threecolor);
+    font-size: 13px;
+}
+.card-caption .card-details-container .card-details-caption{
+    color:var(--twocolor);
+    font-size: 13px;
+}
+
+.deals-container{
+    background-color: var(--fivecolor);
+    border-radius: 15px;
+}
+
+.deals-icon{
+    color:var(--fivecolor);
+    font-size: 16px;
+    background-color: var(--twocolor);
+    border-radius: 50%;
+}
+
+.revenue-icon{
+    color:var(--fourcolor);
+    font-size: 16px;
+    background-color: var(--twocolor);
+    border-radius: 50%;
+}
+
+.revenue-container{
+    background-color: var(--fourcolor);
+    border-radius: 15px;
+}
+
+.Campaigns-container{
+    background-color:var(--sixcolor);
+    border-radius: 15px;
+}
+
+.Campaigns-icon{
+    color:var(--sixcolor);
+    font-size: 16px;
+    background-color: var(--twocolor);
+    border-radius: 50%;
+}
+
+
+.chart-headline{
+font-size: 20px;
+text-align: center;
+font-weight: 600;
+color:var(--onecolor);
+}
+
+
+/* -----------------------------------Skills section--------------------------------- */
+
+.skills-heading{
+    font-size: 20px;
+    color:var(--fourcolor);
+    font-weight: 600;
+}
+
+.progress-title{
+    color:var(--sixcolor);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.progress-precentage{
+    color:var(--fourcolor);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background-color: var(--threecolor);
+}
+
+.skills-container{
+    background-color: var(--twocolor);
+    border-radius: 15px;
+}
+
+.skills-img-container{
+    background-color: var(--fourcolor);
+    border-radius: 15px;
+}
+
+
+/* -----------------------------------charts section and open projects--------------------------------- */
+
+.chart-container{
+    background-color: var(--twocolor);
+    border-radius: 15px;
+}
+
+.open-project-heading{
+    color:var(--onecolor);
+    font-size:20px;
+    font-weight: 600;
+}
+
+.open-project-icon{
+    color:var(--twocolor);
+    font-size:16px;
+    margin-top: 10px;
+   
+
+}
+
+.open-project-icon-container{
+    background-color: var(--sixcolor);
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+.wordpress-icon-container {
+    background-color: var(--fourcolor);
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+.meeting-icon-container{
+    background-color: var(--fivecolor);
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+.design-icon-container{
+    background-color:var(--sevencolor);
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+}
+
+.open-project-haeding{
+    color:var(--threecolor);
+    font-size:16px;
+    font-weight: 600;
+}
+
+.open-project-caption{
+    color:var(--threecolor);
+    font-size:14px;
+    font-weight:400;
+}
+
+.project-card-border{
+  background-color: var(--tencolor);
+  min-height: 1px;
+  width:100%;
+}
+
+.open-projects-main-container{
+    background-color: var(--twocolor);
+    border-radius: 15px;
+}
+
+.revenue-heading{
+    color: var(--onecolor);
+    font-size:20px;
+   font-weight:600;
+}
+
+.revenue-chart-container{
+    background-color: var(--twocolor);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+

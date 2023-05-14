@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/logo-mark.png">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <title>SGS Dashboard</title>
+    </head>
+    <body>
+        <!---------------------------------------------------Sidebar------------------------------------------------------- -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="">
+                <div class=" d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-house "></i></a>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-th-large "></i></a>
+                    <a href="index-2.html">Users</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-users"></i></a>
+                    <a href="#">Apps</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"> <i class="sidebar-icon fas fa-star"></i></a>
+                    <a href="#">Favourites</a>
+                    <span><i class="icons ms-3 fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5">
+                    <a href="#"><i class="sidebar-icon far fa-clock"></i></a>
+                    <a href="#">Recent</a>
+                    <span> <i class="icons ms-3 fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-share-alt"></i></a>
+                    <a href="#">Share with me</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"> <i class="sidebar-icon fas fa-folder"></i></a>
+                    <a href="#">Workspaces</a>
+                    <span><i class="icons ms-3 fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-user-circle"></i></a>
+                    <a href="index.html">My Workspaces</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5">
+                    <a href="#"> <i class="sidebar-icon fas fa-question-circle"></i></a>
+                    <a href="#">Support</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="d-flex">
+                <div class="sidemenu-icon col-md-1 pt-4 ps-3 pe-3 text-center">
+                    <span class="" onclick="openNav()"><i class="icons fas
+                            fa-bars"></i></span>
+                    <div class="sidebar-links mt-5">
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas fa-house "></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="index-2.html"><i class="sidebar-icon fas
+                                    fa-users"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas fa-th-large
+                                    "></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"> <i class="sidebar-icon fas fa-star"></i></a>
+                        </div>
+
+                        <div class="my-5">
+                            <a href="#"><i class="sidebar-icon far fa-clock"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas
+                                    fa-share-alt"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"> <i class="sidebar-icon fas fa-folder"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="index.html"><i class="sidebar-icon fas
+                                    fa-user-circle"></i></a>
+                        </div>
+
+                        <div class="my-5">
+                            <a href="#"> <i class="sidebar-icon fas
+                                    fa-question-circle"></i></a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-11">
+                    <!---------------------------------------------------Navbar------------------------------------------------------- -->
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container">
+                            <a class="navbar-brand me-3" href="#"><img
+                                    src="img/logo.png "
+                                    alt="logo.png "></a>
+                            <button class="navbar-toggler mt-2 mb-4"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse "
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-5
+                                    ">
+                                    <div role="search" class="mt-3 mx-5">
+                                        <input class="form-control
+                                            search-nav-input" type="search"
+                                            placeholder="Search"
+                                            aria-label="Search">
+
+
+                                    </div>
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+                                        <i class="icons fas fa-bell me-2"></i>
+                                        <a class="nav-link active nav-links "
+                                            aria-current="page" href="#">Notifications</a>
+                                    </li>
+
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+
+                                        <i class="icons fas fa-envelope me-2"></i>
+                                        <a class="nav-link active nav-links"
+                                            aria-current="page" href="#">Messages</a>
+                                    </li>
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+                                        <img class="admin-img me-2"
+                                            src="img/user-1.png"
+                                            alt="user-1.png">
+                                        <div>
+                                            <a class="nav-link active nav-links"
+                                                aria-current="page" href="#">David
+                                                Allen</a>
+                                            <p class="ms-2">Admin Head</p>
+                                        </div>
+                                        <span><i class="icons fas
+                                                fa-angle-right"></i></span>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <!---------------------------------------------------workspace content------------------------------------------------------- -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="breadcrum">
+                                        <span><a class="text-muted" href="#">Home</a></span>
+                                        <span><a class="text-muted mx-2"
+                                                href="#">/</a></span>
+                                        <span><a class="breadcrum-link"
+                                                href="index.html">My Workspace</a></span>
+                                    </div>
+
+                                </div>
+                                <!-- ---------------------------------------cards and welcome card-------------------------------------------------------- -->
+                                <div class="d-flex content-container py-5 ">
+                                    <div class="col-md-9 d-flex flex-wrap">
+                                        <div class="col-md-6 dashboard-details">
+                                            <div>
+                                                <div>
+                                                    <div class="d-flex flex-wrap
+                                                        recent-leads-container
+                                                        me-2 px-3 ">
+                                                        <div
+                                                            class="card-icon-container
+                                                            mt-3 ps- ">
+                                                            <i class="leads-icon
+                                                                p-3 fas
+                                                                fa-paper-plane"></i>
+                                                        </div>
+                                                        <div class="card-caption
+                                                            pt-4 ps-3">
+                                                            <h3
+                                                                class="card-heading">Recent
+                                                                Deals</h3>
+                                                            <p
+                                                                class="card-heading">450</p>
+                                                            <div class="d-flex
+                                                                flex-wrap
+                                                                card-details-container">
+                                                                <p
+                                                                    class="card-details">-5.78%</p>
+                                                                <p
+                                                                    class="card-details-caption
+                                                                    ms-2 ">since
+                                                                    this month</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="d-flex flex-wrap
+                                                        revenue-container mt-5
+                                                        me-2 px-3">
+                                                        <div
+                                                            class="card-icon-container
+                                                            mt-3">
+                                                            <i
+                                                                class="revenue-icon
+                                                                p-3 fas
+                                                                fa-sack-dollar"></i>
+                                                        </div>
+                                                        <div class="card-caption
+                                                            pt-4 ps-3">
+                                                            <h3
+                                                                class="card-heading">Revenue</h3>
+                                                            <p
+                                                                class="card-heading">$79.897</p>
+                                                            <div class="d-flex
+                                                                flex-wrap
+                                                                card-details-container">
+                                                                <p
+                                                                    class="card-details">+29.88%</p>
+                                                                <p
+                                                                    class="card-details-caption
+                                                                    ms-2 ">since
+                                                                    this month</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 dashboard-details">
+                                            <div>
+                                                <div>
+                                                    <div class="d-flex flex-wrap
+                                                        deals-container px-3 ">
+                                                        <div
+                                                            class="card-icon-container
+                                                            mt-3">
+                                                            <i class="deals-icon
+                                                                p-3 fas
+                                                                fa-handshake"></i>
+                                                        </div>
+                                                        <div class="card-caption
+                                                            pt-4 ps-3">
+                                                            <h3
+                                                                class="card-heading">Deals</h3>
+                                                            <p
+                                                                class="card-heading">15.556</p>
+                                                            <div class="d-flex
+                                                                flex-wrap
+                                                                card-details-container">
+                                                                <p
+                                                                    class="card-details">+8.75%</p>
+                                                                <p
+                                                                    class="card-details-caption
+                                                                    ms-2 ">since
+                                                                    this month</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="d-flex flex-wrap
+                                                        Campaigns-container mt-5
+                                                        px-3">
+                                                        <div
+                                                            class="card-icon-container
+                                                            mt-3">
+                                                            <i
+                                                                class="Campaigns-icon
+                                                                p-3 fas
+                                                                fa-rocket"></i>
+                                                        </div>
+                                                        <div class="card-caption
+                                                            pt-4 ps-3">
+                                                            <h3
+                                                                class="card-heading">Campaigns</h3>
+                                                            <p
+                                                                class="card-heading">255</p>
+                                                            <div class="d-flex
+                                                                flex-wrap
+                                                                card-details-container">
+                                                                <p
+                                                                    class="card-details">+9.98%</p>
+                                                                <p
+                                                                    class="card-details-caption
+                                                                    ms-2 ">since
+                                                                    this month</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3 py-3 ms-2
+                                        welcome-card-container">
+                                        <div class="welcome-card text-center">
+                                            <img src="img/welcome-img.svg"
+                                                alt="welcome-img.svg">
+                                            <h4 class="welcome-card-title py-2">Welcome
+                                                Back!</h4>
+                                            <p class="welcome-card-caption">Your
+                                                workspace summary</p>
+                                            <div class="d-flex
+                                                justify-content-around">
+                                                <div>
+                                                    <p class="weather-title
+                                                        me-4">Weather Today</p>
+                                                    <div class="d-flex ms-2">
+                                                        <p
+                                                            class="weather-today">Parthly
+                                                            Cloudy</p>
+                                                        <p class="today-degree
+                                                            ms-2">18 °C</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img
+                                                        src="Design-icons/weather-color-sun-cloud-svgrepo-com.svg">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ---------------------------------------Revenue charts------------------------------------------------------- -->
+                                <div>
+                                    <div class="revenue-chart-container p-5">
+                                        <h2 class="revenue-heading ms-3">Revenue
+                                            Generated</h2>
+
+                                        <div>
+                                            <div class="text-xenter">
+                                                <canvas id="revenueChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------------------------------------Skills and charts------------------------------------------------------- -->
+                                <div class="py-5">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="col-md-3
+                                            skills-main-container me-4">
+                                            <div class="skills-container ">
+                                                <div class="pb-5">
+                                                    <img class="w-100 mb-3
+                                                        skills-img-container"
+                                                        src="img/skills-img.svg"
+                                                        alt="skills-img.svg">
+                                                    <div class="text-center">
+                                                        <h2
+                                                            class="skills-heading
+                                                            py-3">Your Skills</h2>
+                                                        <div
+                                                            class="skills-progress-container
+                                                            px-3">
+                                                            <div class="mt-5">
+                                                                <div
+                                                                    class="d-flex
+                                                                    justify-content-between">
+                                                                    <p
+                                                                        class="progress-title">Time
+                                                                        Management</p>
+                                                                    <p
+                                                                        class="progress-precentage">80%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="progress"
+                                                                    role="progressbar"
+                                                                    aria-label="Warning
+                                                                    example"
+                                                                    aria-valuenow="80"
+                                                                    aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div
+                                                                        class="progress-bar
+                                                                        "
+                                                                        style="width:
+                                                                        80%"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="my-4">
+                                                                <div
+                                                                    class="d-flex
+                                                                    justify-content-between">
+                                                                    <p
+                                                                        class="progress-title">Leadership</p>
+                                                                    <p
+                                                                        class="progress-precentage">90%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="progress"
+                                                                    role="progressbar"
+                                                                    aria-label="Warning
+                                                                    example"
+                                                                    aria-valuenow="80"
+                                                                    aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div
+                                                                        class="progress-bar
+                                                                        "
+                                                                        style="width:
+                                                                        90%"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="my-4">
+                                                                <div
+                                                                    class="d-flex
+                                                                    justify-content-between">
+                                                                    <p
+                                                                        class="progress-title">Communication</p>
+                                                                    <p
+                                                                        class="progress-precentage">65%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="progress"
+                                                                    role="progressbar"
+                                                                    aria-label="Warning
+                                                                    example"
+                                                                    aria-valuenow="80"
+                                                                    aria-valuemin="0"
+                                                                    aria-valuemax="100">
+                                                                    <div
+                                                                        class="progress-bar
+                                                                        "
+                                                                        style="width:
+                                                                        65%"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 chart-container
+                                            mx-4 ">
+                                            <div>
+                                                <div>
+                                                    <div class="pb-5">
+                                                        <h3
+                                                            class="chart-headline
+                                                            py-5">Email Campaign</h3>
+                                                        <div>
+                                                            <canvas
+                                                                id="emailCampaignChart"></canvas>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 chart-container
+                                            ms-3 ">
+                                            <div>
+                                                <div>
+                                                    <div class="pb-5">
+                                                        <h3
+                                                            class="chart-headline
+                                                            py-5">Active Team</h3>
+                                                        <div>
+                                                            <canvas
+                                                                id="activeTeamChart"></canvas>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- ---------------------------------------Work performance & Open project section------------------------------------------------------- -->
+                                <div class="py-5">
+                                    <div class="d-flex">
+                                        <div class="col-md-3 chart-container
+                                            pb-4">
+                                            <div>
+                                                <div>
+                                                    <div class="pb-5">
+                                                        <h3
+                                                            class="chart-headline
+                                                            py-5">Work
+                                                            Performance</h3>
+                                                        <div>
+                                                            <canvas
+                                                                id="workPerformanceChart"></canvas>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class=" col-md-9
+                                            open-projects-main-container ms-4">
+                                            <div class="pb-2 ">
+                                                <div class="px-3">
+                                                    <h2
+                                                        class="open-project-heading
+                                                        pt-5 ps-1">Open Projects</h2>
+                                                    <div>
+                                                        <div class=" d-flex
+                                                            justify-content-between
+                                                            pt-4">
+                                                            <div class="d-flex
+                                                                ">
+                                                                <div
+                                                                    class="open-project-icon-container
+                                                                    text-center">
+                                                                    <i
+                                                                        class="open-project-icon
+                                                                        fas
+                                                                        fa-pencil-ruler"></i></div>
+                                                                <div
+                                                                    class="ps-4">
+                                                                    <h3
+                                                                        class="open-project-haeding
+                                                                        ">Admin
+                                                                        Dashboard
+                                                                        Design</h3>
+                                                                    <p
+                                                                        class="open-project-caption">Broadcast
+                                                                        web app
+                                                                        mockup</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="d-flex
+                                                                ">
+
+
+                                                                <div>
+                                                                    <p
+                                                                        class="open-project-caption">15
+                                                                        minutes
+                                                                        ago</p>
+                                                                    <p
+                                                                        class="open-project-caption">20
+                                                                        tasks, 3
+                                                                        issues</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="project-card-border"></div>
+                                                    </div>
+
+                                                    <div>
+                                                        <div class=" d-flex
+                                                            justify-content-between
+                                                            flex-wrap pt-4">
+                                                            <div class="d-flex
+                                                                flex-wrap">
+                                                                <div
+                                                                    class="wordpress-icon-container
+                                                                    text-center">
+                                                                    <i
+                                                                        class="open-project-icon
+                                                                        fas
+                                                                        fa-pencil-ruler"></i></div>
+                                                                <div
+                                                                    class="ps-4">
+                                                                    <h3
+                                                                        class="open-project-haeding
+                                                                        ">Wordpress
+                                                                        Development</h3>
+                                                                    <p
+                                                                        class="open-project-caption">Upload
+                                                                        new
+                                                                        design</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="d-flex
+                                                                flex-wrap ">
+                                                                <div>
+                                                                    <p
+                                                                        class="open-project-caption">15
+                                                                        minutes
+                                                                        ago</p>
+                                                                    <p
+                                                                        class="open-project-caption">20
+                                                                        tasks, 3
+                                                                        issues</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="project-card-border"></div>
+                                                    </div>
+
+                                                    <div>
+                                                        <div class=" d-flex
+                                                            justify-content-between
+                                                            flex-wrap pt-4">
+                                                            <div class="d-flex
+                                                                flex-wrap">
+                                                                <div
+                                                                    class="meeting-icon-container
+                                                                    text-center">
+                                                                    <i
+                                                                        class="open-project-icon
+                                                                        fas
+                                                                        fa-pencil-ruler"></i></div>
+                                                                <div
+                                                                    class="ps-4">
+                                                                    <h3
+                                                                        class="open-project-haeding
+                                                                        ">Project
+                                                                        Meeting</h3>
+                                                                    <p
+                                                                        class="open-project-caption">Broadcast
+                                                                        web app
+                                                                        mockup</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="d-flex
+                                                                flex-wrap">
+                                                                <div>
+                                                                    <p
+                                                                        class="open-project-caption">15
+                                                                        minutes
+                                                                        ago</p>
+                                                                    <p
+                                                                        class="open-project-caption">20
+                                                                        tasks, 3
+                                                                        issues</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="project-card-border"></div>
+                                                    </div>
+
+                                                    <div>
+                                                        <div class=" d-flex
+                                                            justify-content-between
+                                                            flex-wrap pt-4">
+                                                            <div class="d-flex
+                                                                flex-wrap">
+                                                                <div
+                                                                    class="design-icon-container
+                                                                    text-center">
+                                                                    <i
+                                                                        class="open-project-icon
+                                                                        fas
+                                                                        fa-pencil-ruler"></i></div>
+                                                                <div
+                                                                    class="ps-4">
+                                                                    <h3
+                                                                        class="open-project-haeding
+                                                                        ">UI
+                                                                        Design</h3>
+                                                                    <p
+                                                                        class="open-project-caption">New
+                                                                        application
+                                                                        planning</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="d-flex
+                                                                flex-wrap ">
+                                                                <div>
+                                                                    <p
+                                                                        class="open-project-caption">15
+                                                                        minutes
+                                                                        ago</p>
+                                                                    <p
+                                                                        class="open-project-caption">20
+                                                                        tasks, 3
+                                                                        issues</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---------------------------------------------------Footer------------------------------------------------------- -->
+                    <footer class="text-center bg-white mt-2 py-2">
+                        <p class="footer-caption py-2 mt-2">© 2014–2023
+                            Manal_Samir. All rights reserved.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/scrpit.js"></script>
+    </body>
+</html>

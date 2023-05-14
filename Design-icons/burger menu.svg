@@ -1,0 +1,5 @@
+<svg id="burger_menu" data-name="burger menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <path id="XMLID_241_" d="M4,8H36a4,4,0,1,0,0-8H4A4,4,0,0,0,4,8Z" fill="#5e6eed"/>
+  <path id="XMLID_242_" d="M36,60H4a4,4,0,0,0,0,8H36a4,4,0,1,0,0-8Z" transform="translate(0 -44)" fill="#5e6eed"/>
+  <path id="XMLID_243_" d="M36,120H4a4,4,0,0,0,0,8H36a4,4,0,1,0,0-8Z" transform="translate(0 -88)" fill="#5e6eed"/>
+</svg>

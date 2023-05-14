@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/logo-mark.png">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <title>SGS Dashboard</title>
+    </head>
+    <body>
+        <!---------------------------------------------------sidebar------------------------------------------------------- -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="">
+                <div class=" d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-house "></i></a>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-th-large "></i></a>
+                    <a href="index-2.html">Users</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-users"></i></a>
+                    <a href="#">Apps</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"> <i class="sidebar-icon fas fa-star"></i></a>
+                    <a href="#">Favourites</a>
+                    <span><i class="icons fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5">
+                    <a href="#"><i class="sidebar-icon far fa-clock"></i></a>
+                    <a href="#">Recent</a>
+                    <span> <i class="icons fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-share-alt"></i></a>
+                    <a href="#">Share with me</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"> <i class="sidebar-icon fas fa-folder"></i></a>
+                    <a href="#">Workspaces</a>
+                    <span><i class="icons fas fa-angle-right"></i></span>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5 ">
+                    <a href="#"><i class="sidebar-icon fas fa-user-circle"></i></a>
+                    <a href="index.html">My Workspaces</a>
+                </div>
+
+                <div class="d-flex sidebar-opened my-5">
+                    <a href="#"> <i class="sidebar-icon fas fa-question-circle"></i></a>
+                    <a href="#">Support</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="d-flex">
+                <div class="sidemenu-icon col-md-1 pt-4 ps-3 pe-3 text-center">
+                    <span class="" onclick="openNav()"><i class="icons fas
+                            fa-bars"></i></span>
+                    <div class="sidebar-links mt-5">
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas fa-house "></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="index-2.html"><i class="sidebar-icon fas
+                                    fa-users"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas fa-th-large
+                                    "></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"> <i class="sidebar-icon fas fa-star"></i></a>
+                        </div>
+
+                        <div class="my-5">
+                            <a href="#"><i class="sidebar-icon far fa-clock"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"><i class="sidebar-icon fas
+                                    fa-share-alt"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="#"> <i class="sidebar-icon fas fa-folder"></i></a>
+                        </div>
+
+                        <div class="my-5 ">
+                            <a href="index.html"><i class="sidebar-icon fas
+                                    fa-user-circle"></i></a>
+                        </div>
+
+                        <div class="my-5">
+                            <a href="#"> <i class="sidebar-icon fas
+                                    fa-question-circle"></i></a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-11">
+                    <!---------------------------------------------------Navbar------------------------------------------------------- -->
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container">
+                            <a class="navbar-brand me-4" href="#"><img
+                                    src="img/logo.png "
+                                    alt="logo.png "></a>
+                            <button class="navbar-toggler mt-2 mb-4"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse "
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-5
+                                    ">
+                                    <div role="search" class="mt-3 mx-5">
+                                        <input class="form-control
+                                            search-nav-input" type="search"
+                                            placeholder="Search"
+                                            aria-label="Search">
+
+
+                                    </div>
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+                                        <i class="icons fas fa-bell me-2"></i>
+                                        <a class="nav-link active nav-links "
+                                            aria-current="page" href="#">Notifications</a>
+                                    </li>
+
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+
+                                        <i class="icons fas fa-envelope me-2"></i>
+                                        <a class="nav-link active nav-links"
+                                            aria-current="page" href="#">Messages</a>
+                                    </li>
+
+                                    <li class="nav-item d-flex mt-3 mx-3">
+                                        <img class="admin-img me-2"
+                                            src="img/user-1.png"
+                                            alt="user-1.png">
+                                        <div>
+                                            <a class="nav-link active nav-links"
+                                                aria-current="page" href="#">David
+                                                Allen</a>
+                                            <p class="ms-2">Admin Head</p>
+                                        </div>
+                                        <span><i class="icons fas
+                                                fa-angle-right"></i></span>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <!---------------------------------------------------Table content------------------------------------------------------- -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="breadcrum">
+                                        <span><a class="text-muted" href="#">Home</a></span>
+                                        <span><a class="text-muted mx-2"
+                                                href="#">/</a></span>
+                                        <span><a class="breadcrum-link"
+                                                href="index-2.html">Users</a></span>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex justify-content-between
+                                    mt-3">
+                                    <h1 class="user-list-heading mt-3">User List</h1>
+                                    <div role="search" class="my-3 ">
+                                        <input id="searchInput"
+                                            class="form-control" type="search"
+                                            placeholder="Search of user"
+                                            aria-label="Search">
+                                    </div>
+                                </div>
+                                <div class="table-contanier py-3">
+                                    <table class="table table-borderless
+                                        users-table" id="tbUser">
+                                        <tr class=" table-heading text-center ">
+                                            <th>Profile Name</th>
+                                            <th>Countery</th>
+                                            <th>Join Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr class="user-table-row text-center ">
+                                            <td>
+
+
+
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-1.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Johan William</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">USA</p>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">01/01/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status mt-2">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            mt-2 fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete "> <i
+                                                            class="delete-icon
+                                                            mt-2 fas fa-trash"></i></a></span>
+                                            </td>
+
+
+
+
+
+                                        </tr>
+
+
+
+                                        <tr class="user-table-row text-center">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-2.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Julia Robert</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>England</p>
+                                            </td>
+                                            <td>
+                                                <p>01/21/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete"> <i
+                                                            class="delete-icon
+                                                            fas fa-trash"></i></a></span>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr class="user-table-row text-center">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-3.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Harry Tom</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>French</p>
+                                            </td>
+                                            <td>
+                                                <p>03/07/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete"> <i
+                                                            class="delete-icon
+                                                            fas fa-trash"></i></a></span>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr class="user-table-row text-center ">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-1.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Johan William</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">USA</p>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">01/01/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status mt-2">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            mt-2 fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete "> <i
+                                                            class="delete-icon
+                                                            mt-2 fas fa-trash"></i></a></span>
+                                            </td>
+
+
+
+                                        </tr>
+
+
+
+                                        <tr class="user-table-row text-center">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-2.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Julia Robert</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>England</p>
+                                            </td>
+                                            <td>
+                                                <p>01/21/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete"> <i
+                                                            class="delete-icon
+                                                            fas fa-trash"></i></a></span>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr class="user-table-row text-center">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-3.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Harry Tom</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>French</p>
+                                            </td>
+                                            <td>
+                                                <p>03/07/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete"> <i
+                                                            class="delete-icon
+                                                            fas fa-trash"></i></a></span>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class=" text-center ">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img class="user-img"
+                                                        src="img/user-1.png"
+                                                        alt="user-1.png">
+                                                    <h6 class="user-name mt-2
+                                                        ms-2">Johan William</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">USA</p>
+                                            </td>
+                                            <td>
+                                                <p class="mt-2">01/01/2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="user-status mt-2">Online</p>
+                                            </td>
+
+                                            <td>
+
+                                                <span><a class="btnUpdate me-2">
+                                                        <i class="update-icon
+                                                            mt-2 fas fa-edit"></i></a></span>
+                                                <span><a class="btnDelete "> <i
+                                                            class="delete-icon
+                                                            mt-2 fas fa-trash"></i></a></span>
+                                            </td>
+
+
+
+                                        </tr>
+
+                                    </table>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---------------------------------------------------Footer------------------------------------------------------- -->
+                    <footer class="text-center bg-white mt-2 py-2">
+                        <p class="footer-caption py-2 mt-2">© 2014–2023
+                            Manal_Samir. All rights reserved.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/scrpit.js"></script>
+    </body>
+</html>
